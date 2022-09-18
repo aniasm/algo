@@ -17,7 +17,7 @@ isPrime() {
 }
 
 
-echo -e "Enter Number: \c"
+echo -e "Wpisz liczbe: \c"
 read num
 result_all='';
 for((j=2; j<=$num; j++))
