@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -o odjazdy.html https://portalpasazera.pl/KatalogStacji?stacja=WARSZAWA+OCHOTA
+curl https://portalpasazera.pl/KatalogStacji?stacja=WARSZAWA+OCHOTA | tr -d "\r" > odjazdy.html
 grep  "item-label\"" odjazdy.html > nag1.html
 sed 's/\(<span class="item-label">\|<\/span>\)//g' < nag1.html > nag2.html
 tr "\n" "," < nag2.html > nag3.html
