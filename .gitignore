@@ -1,0 +1,4 @@
+# ignore object files and out
+*.o
+*.out
+*.e
